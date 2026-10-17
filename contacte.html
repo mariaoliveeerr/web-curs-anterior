@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contacte</title>
+        <link href="styles.css"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+    <body>
+        <header>
+            <nav class="navegacio">
+               <a href="index.html"><img class="logo" src="images/logo-void.png" alt="Logo"/></a>
+               <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <ul id="menu">
+                    <li id="dates"><a href="index.html#dates">Dates</a></li>
+                    <li id="sponsors"><a href="index.html#sponsors">Sponsors</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                    <li><a href="registre.html">Registre</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Contacte</h2>
+                <div class="contingut-contacte">
+                    <div class="contacte-info">
+                        <h3>Contacta amb nosaltres.</h3>
+                        <p>VOID no te camí de tornada. La passarel·la de moda més important de Barcelona t'espera. </p>
+                        <p><strong>Adreça:</strong> Carrer dels Almogàvers, 122, Barcelona</p>
+                        
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7655.746077706377!2d2.1793084618864906!3d41.39802286778257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a319033197a3%3A0x88a1edc048d07d90!2sCarrer%20dels%20Almog%C3%A0vers%2C%20122%2C%20Sant%20Mart%C3%AD%2C%2008018%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sus!4v1775731150527!5m2!1ses!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        <div class="xarxes">
+                            <img src="images/logotipo-de-instagram-2 copia.png">
+                            <img src="images/logotipos-2 copia.png">
+                            <img src="images/tik-tok copia.png">
+                        </div>
+                    </div>
+                    
+                    <div class="contacte-formulari">
+                        <form>
+                            <input type="text" placeholder="Nom" required>
+                            <input type="email" id="contacte-email" placeholder="Correu electrònic" required>
+                            <input type="text" placeholder="Assumpte" required>
+                            <textarea placeholder="Missatge" rows="4" required></textarea>
+                            <button type="submit" onclick="return validarContacte()">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        
+
+
+        <footer>
+            <p>
+                <img src="images/logotipo-de-instagram-2.png">
+                <img src="images/logotipos-2.png">
+                <img src="images/tik-tok.png">
+            </p>
+
+            <li><a href="termes i condicions.html">Termes i Condicions</a></li>
+            <li><a href="politica de cookies.html">Politica de Cookies</a></li>
+            <li><a href="politica de privadesa.html">Politica de Privadesa</a></li>
+            <li>&copy; 2026 Maria Oliver. Tots els drets reservats.</li>
+        </footer>
+        <script src="javascript.js"></script>
+    </body>
+
+
+
+
+</html>

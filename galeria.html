@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VOID BCN</title>
+        <link href="styles.css"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body>
+        <header>
+            <nav class="navegacio">
+               <a href="index.html"><img class="logo" src="images/logo-void.png" alt="Logo"/></a>
+               <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <ul id="menu">
+                    <li id="dates"><a href="index.html#dates">Dates</a></li>
+                    <li id="sponsors"><a href="index.html#sponsors">Sponsors</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                    <li><a href="registre.html">Registre</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Fotografies d'altres anys</h2>
+                <article>
+                    <div class="slider">
+                        <ul>
+                            <li><img src="images/pexels-cottonbro-9509647.jpg" onclick="ampliarImatge(this.src)"></li>
+                            <li><img src="images/pexels-bertellifotografia-33714927.jpg" onclick="ampliarImatge(this.src)"></li>
+                            <li><img src="images/pexels-dogu-tuncer-339534179-16948908.jpg" onclick="ampliarImatge(this.src)"></li>
+                            <li><img src="images/pexels-pixabay-262039.jpg" onclick="ampliarImatge(this.src)"></li>
+                            <li><img src="images/pexels-gesel-1396115.jpg" onclick="ampliarImatge(this.src)"></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="galeria">
+                <h2>Galeria de la pasarel·la VOID 2025</h2>
+                <article>
+                    <div class="filagaleria">
+                        <img src="images/pexels-marcus-queiroga-silva-86421404-19921436.jpg" alt="Img 1" onclick="ampliarImatge(this.src)">
+                        <img src="images/pexels-marcus-queiroga-silva-86421404-19921645.jpg" alt="Img 2" onclick="ampliarImatge(this.src)">
+                        <img src="images/pexels-marcus-queiroga-silva-86421404-19922370.jpg" alt="Img 3" onclick="ampliarImatge(this.src)">
+                        <img src="images/pexels-rgsk97-1246380.jpg" alt="Img 4" onclick="ampliarImatge(this.src)">
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+        
+        <footer>
+            <p>
+                <img src="images/logotipo-de-instagram-2.png">
+                <img src="images/logotipos-2.png">
+                <img src="images/tik-tok.png">
+            </p>
+        
+            <li><a href="termes i condicions.html">Termes i Condicions</a></li>
+            <li><a href="politica de cookies.html">Politica de Cookies</a></li>
+            <li><a href="politica de privadesa.html">Politica de Privadesa</a></li>
+            <li>&copy; 2026 Maria Oliver. Tots els drets reservats.</li>
+        </footer>
+
+        <div id="modal-lightbox" class="lightbox" onclick="tancarModal()">
+            <span class="lightbox-tancar" onclick="tancarModal()">&times;</span>
+            <img class="lightbox-contingut" id="img-ampliada">
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
